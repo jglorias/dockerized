@@ -1,0 +1,17 @@
+###
+GET http://localhost:8989
+###
+GET http://localhost:8989/setupdb
+###
+
+###
+POST http://localhost:8989/
+Content-Type: application/json
+
+{
+    "id": 1818,
+    "destination":"Berlin",
+    "origin": "Jakarta",
+    "status": "Shipped"
+}
+###
