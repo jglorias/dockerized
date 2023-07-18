@@ -13,7 +13,7 @@ RUN npm install
 COPY . /usr/src/app/
 #Copying ALL the files (hence the wild card ".") into the working directory. 
 
-EXPOSE 8080
+EXPOSE 1337
 #Exposing a port, which is 8080, for apps to connect to. It's basically listening to the exposed port for any incoming traffic.
 
 CMD ["npm", "run", "dev"]

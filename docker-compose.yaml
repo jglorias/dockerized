@@ -13,7 +13,7 @@ services:
     image: nodejsbackendtest
     #name of app on docker
     ports:
-      - 8989:3000
+      - 8080:3000
       #8989 is the port we access from the outside, 3000 is the port inside of the container. So when we connect to 8989, it redirects us to 3000 inside the container.
       #3000 is the port we exposed earlier in server.js
-      #This is why our requests in the test.rest file is directed at 8989, and not 3000.
+      #This is why our requests in the test.rest file is directed at 8080, and not 3000.

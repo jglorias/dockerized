@@ -9,9 +9,9 @@ POST http://localhost:8989/
 Content-Type: application/json
 
 {
-    "id": 1818,
-    "destination":"Berlin",
-    "origin": "Jakarta",
-    "status": "Shipped"
+    "id": 1773,
+    "destination":"Potsdam",
+    "origin": "Manila",
+    "status": "Preparing"
 }
 ###
