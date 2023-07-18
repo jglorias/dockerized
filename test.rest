@@ -1,11 +1,11 @@
 ###
-GET http://localhost:8989
+GET http://localhost:8080
 ###
-GET http://localhost:8989/setupdb
+GET http://localhost:8080/setupdb
 ###
 
 ###
-POST http://localhost:8989/
+POST http://localhost:8080/
 Content-Type: application/json
 
 {

@@ -13,9 +13,10 @@ RUN npm install
 COPY . /usr/src/app/
 #Copying ALL the files (hence the wild card ".") into the working directory. 
 
-EXPOSE 1337
-#Exposing a port, which is 8080, for apps to connect to. It's basically listening to the exposed port for any incoming traffic.
+EXPOSE 8080 1337
+#Exposing a port, which is 8080 and 1337, for apps to connect to. It's basically listening to the exposed port for any incoming traffic.
 
+ENV PORT 8080
 CMD ["npm", "run", "dev"]
 #means that when a container is started from the image built from that Dockerfile, it will automatically start a development server for a Node.js 
 #application by running the dev script defined in the package.json file. This is what Bing AI said. 
