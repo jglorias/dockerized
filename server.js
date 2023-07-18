@@ -1,6 +1,6 @@
 const express = require("express");
 const pool = require("./db");
-const port = 3000;
+app.set('port', process.env.PORT || 3000);
 app.listen(port, () => console.log(`Server has started on port: ${port}`));
 
 const app = express();

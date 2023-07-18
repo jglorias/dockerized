@@ -13,8 +13,8 @@ RUN npm install
 COPY . /usr/src/app/
 #Copying ALL the files (hence the wild card ".") into the working directory. 
 
-EXPOSE 1337
-#Exposing a port, which is 3000, for apps to connect to. It's basically listening to the exposed port for any incoming traffic.
+EXPOSE 8080
+#Exposing a port, which is 8080, for apps to connect to. It's basically listening to the exposed port for any incoming traffic.
 
 CMD ["npm", "run", "dev"]
 #means that when a container is started from the image built from that Dockerfile, it will automatically start a development server for a Node.js 
